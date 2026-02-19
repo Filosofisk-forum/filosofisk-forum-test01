@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 95%;
+    --foreground: 220 20% 15%;
+
+    --card: 40 15% 97%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 40 15% 97%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 220 30% 20%;
+    --primary-foreground: 40 20% 95%;
+
+    --secondary: 35 25% 88%;
+    --secondary-foreground: 220 20% 15%;
+
+    --muted: 35 15% 90%;
+    --muted-foreground: 220 10% 45%;
+
+    --accent: 8 55% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 82%;
+    --input: 35 20% 82%;
+    --ring: 220 30% 20%;
+
+    --radius: 0.25rem;
+
+    --sidebar-background: 220 30% 20%;
+    --sidebar-foreground: 40 20% 90%;
+    --sidebar-primary: 40 20% 95%;
+    --sidebar-primary-foreground: 220 30% 20%;
+    --sidebar-accent: 220 25% 28%;
+    --sidebar-accent-foreground: 40 20% 90%;
+    --sidebar-border: 220 25% 30%;
+    --sidebar-ring: 8 55% 48%;
+
+    --nav-bg: 220 25% 18%;
+    --nav-foreground: 40 15% 85%;
+    --nav-hover: 8 55% 48%;
+
+    --hero-overlay: 220 30% 10%;
+
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+  }
+
+  .dark {
+    --background: 220 25% 10%;
+    --foreground: 40 15% 90%;
+    --card: 220 25% 13%;
+    --card-foreground: 40 15% 90%;
+    --popover: 220 25% 13%;
+    --popover-foreground: 40 15% 90%;
+    --primary: 40 20% 90%;
+    --primary-foreground: 220 25% 10%;
+    --secondary: 220 20% 18%;
+    --secondary-foreground: 40 15% 90%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 8 55% 55%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 40 20% 90%;
+    --nav-bg: 220 30% 8%;
+    --nav-foreground: 40 15% 80%;
+    --nav-hover: 8 55% 55%;
+    --hero-overlay: 220 30% 5%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
